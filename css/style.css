@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'PoliticsHeadBold';
+    src: url('../fonts/PoliticsHeadv1_9.eot');
+    src: local('☺'), url('../fonts/PoliticsHeadv1_9.woff') format('woff'), url('../fonts/PoliticsHeadv1_9.ttf') format('truetype'), url('../fonts/PoliticsHeadv1_9.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:active, a:visited {
+    color: #0077b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #181818;
+    text-decoration: none;
+}
+
+header h1 a, header h1 a:active, header h1 a:visited, header h1 a:hover {
+    color: #00557F;
+}
+
+nav#mainnav a,
+nav#mainnav a:active,
+nav#mainnav a:visited,
+nav#mainnav a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+.container.fullWidth {
+    position: inherit;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', Sans-Serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #404040;
+}
+
+article > img, article > a > img {
+    margin: 1em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PoliticsHeadBold', 'Helvetica Neue', 'Arial', Sans-Serif;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.blog h1 {
+    margin: 0 0 1em 0;
+}
+
+.blog footer {
+    margin-top: 50px;
+    padding: 5px 20px;
+    background-color: #eeeeee;
+}
+
+header {
+    float: left;
+    margin: 0 0 3em 0;
+}
+
+header h1 {
+    font-size: 3em;
+    line-height: 0.7em;
+    margin: 1em 0 0.3em 0;
+}
+
+header span {
+    padding-left: 0.2em;
+}
+
+nav#mainnav {
+    margin: 45px 0 20px 0;
+    float: right;
+}
+
+nav#mainnav a {
+    display: block;
+    padding: 8px 10px 5px 10px;
+}
+
+nav#mainnav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#mainnav ul li {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav#mainnav ul li:hover {
+    background-color: lightgray;
+}
+
+nav#language {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    color: lightgray;
+}
+
+nav#language a {
+    color: lightgray;
+}
+
+nav#language ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#language ul li {
+    display: inline-block;
+}
+
+nav#language ul li::after {
+    content: " | ";
+}
+
+nav#language ul li:last-child::after {
+    content: "";
+}
+
+nav#language :link::after {
+    content: none;
+}
+
+nav#language abbr {
+    border: none;
+}
+
+section {
+    clear: both;
+    padding-bottom: 100px;
+}
+
+.flashMessage {
+    clear: both;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #ffffff;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+article {
+    position: relative;
+    clear: both;
+    padding-bottom: 100px;
+}
+
+article.fullWidth {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+}
+
+.editForm {
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+}
+
+.editForm input, .editForm textarea {
+    width: 100%;
+}
+
+.editPreview {
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    overflow-y: scroll;
+    height: 620px;
+}
+
+.editPreview h1 {
+    margin-top: 0;
+}
+
+span.createdDate {
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+    color: gray;
+}
+
+div.videoEmbed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 9 / 16 */
+    cursor: pointer;
+}
+
+div.videoEmbed.ratio16to9 {
+    padding-bottom: 56.25%; /* 9 / 16 */
+}
+
+div.videoEmbed.ratio4to3 {
+    padding-bottom: 75%; /* 3 / 4 */
+}
+
+div.videoEmbed img {
+    width: 100%;
+}
+
+div.videoEmbed iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.videoEmbed div.playbutton {
+    background-image: url('../images/playbutton.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -kthtml-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    -webkit-box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.67);
+    box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.67);
+}
+
+div.videoEmbed div.playbutton:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-size: 170px 236px;
+}
+
+.time {
+    padding: 15px 10px 5px 10px;
+}
+
+.time:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.time h3, .time h4 {
+    display: inline;
+}
+
+.time .timeSpan {
+    float: right;
+}
+
+.time .institution {
+    display: block;
+}
+
+@media (max-width: 832px) {
+    .container {
+        margin: 0 1%;
+        width: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        float: left;
+    }
+
+    nav#mainnav {
+        margin-top: 20px;
+        float: none;
+        clear: both;
+    }
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+html[lang="en"] :link[hreflang]:not([hreflang="en"])::after {
+    content: " "attr(hreflang);
+    font-size: xx-small;
+}
+
+html[lang="de"] :link[hreflang]:not([hreflang="de"])::after {
+    content: " "attr(hreflang);
+    font-size: xx-small;
+}
+
+section > h1:first-child {
+    font-size: 1.5em;
+}
+
+.tags {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tags li {
+    display: inline;
+}
+
+.tags li a {
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
