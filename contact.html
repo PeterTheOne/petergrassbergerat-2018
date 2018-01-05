@@ -1,0 +1,114 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<h3>E-Mail</h3>
+<div>
+    <a href="mailto:petergrassberger@gmail.com">petergrassberger@gmail.com</a><br />
+    <a href="mailto:peter.grassberger@piratenpartei.at">peter.grassberger@piratenpartei.at</a>
+</div>
+<h3>PGP - E-Mail Encryption</h3>
+<div>
+    <a href="http://files.petergrassberger.com/peter-grassberger_2015_B5F4D176.asc">1DCC C325 2E43 8859 5288  63B4 4F6A CE90 B5F4 D176</a><br />
+    Learn how  to encrypt your E-Mail with PGP for <a href="https://ssd.eff.org/en/module/how-use-pgp-linux">Linux</a>, <a href="https://ssd.eff.org/en/module/how-use-pgp-mac-os-x">Mac</a> or <a href="https://ssd.eff.org/en/module/how-use-pgp-windows-pc">Windows</a> or visit a <a href="https://www.cryptoparty.in/">CryptoParty</a> near you.
+</div>
+<h3>Online</h3>
+    Twitter: <a href="https://twitter.com/PeterTheOne">@PeterTheOne</a><br />
+    GitHub: <a href="https://github.com/PeterTheOne">PeterTheOne</a><br />
+    Xing: <a href="https://www.xing.com/profile/Peter_Grassberger2">Peter Grassberger</a><br />
+    Jabber: <a href="xmpp:petertheone@jabber.metalab.at">petertheone@jabber.metalab.at</a>
+<h3>Telephone</h3>
+    <a href="tel:+436764284088">+43 676 4284088</a><br />
+    I prefer E-Mail, call me between 10h-22h <a href="http://www.timeanddate.com/worldclock/austria/graz">UTC+01:00</a><br />
+<span class="status">Status: <i>loading</i></span>
+    <script>
+    $(function() {
+        var updateStatus = function() {
+            var now = moment().tz('Europe/Vienna')
+            var hour = now.format('HH');
+            if (hour > 10 && hour < 22) {
+                $('.status').html('<i>It\'s ' + now.format('HH:mm')  + ' in Austria, I should be available now.</i>');
+            } else {
+                $('.status').html('<i>It\'s ' + now.format('HH:mm') + ' in Austria, I\'m not available now.</i>');
+             };
+        }
+
+        updateStatus();
+        setInterval(updateStatus, 1000 * 60 * 1);
+    });
+    </script>
+<h3>Address</h3>
+<a href="http://firestream.petergrassberger.com/" style="text-decoration: none; color:#000000;">
+    <address>
+        Peter Grassberger, BSc<br />
+        Feuerbachgasse 30A, Top 62<br />
+        8020 Graz, Austria
+    </address>
+</a>
+
+<h2>RSS Feeds</h2>
+There are <a href="http://www.whatisrss.com/">RSS Feeds</a> not only for the Blog but also for pages and projects, you can subscribe to one or all languages.
+
+<table>
+    <thead>
+        <tr>
+            <th><h3>English</h3></th>
+            <th><h3>German</h3></th>
+            <th><h3>Both</h3></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="http://petergrassberger.com/rss/">All</a></td>
+            <td><a href="http://petergrassberger.at/rss/">All</a></td>
+            <td><a href="http://petergrassberger.com/rss/all/">All</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.com/rss/blog/">Blog Only</a></td>
+            <td><a href="http://petergrassberger.at/rss/blog/">Blog Only</a></td>
+            <td><a href="http://petergrassberger.com/rss/blog/all/">Blog Only</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.com/rss/projects/">Projects Only</a></td>
+            <td><a href="http://petergrassberger.at/rss/projects/">Projects Only</a></td>
+            <td><a href="http://petergrassberger.com/rss/projects/all/">Projects Only</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.com/rss/pages/">Pages Only</a></td>
+            <td><a href="http://petergrassberger.at/rss/pages/">Pages Only</a></td>
+            <td><a href="http://petergrassberger.com/rss/pages/all/">Pages Only</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Creative Commons</h2>
+<p>
+    All content on this site is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> license unless otherwise marked. It is not required to notify me if you build upon my work, but I would make me happy if you did. The source code for this site is publicly available on <a href="https://github.com/PeterTheOne/petergrassbergerat">Github</a>, feel free to fork and send me your pull-requests. Contact me if you would like to use my content or source code commercially.
+</p>
+
+<h3>Attribution</h3>
+<p>The site uses third party libraries and scripts with a variety of licenses and creative work like images and fonts that were not created by me.</p>
+<ul>
+    <li><a href="http://www.slimframework.com/">Slim Framework</a> (MIT License)</li>
+    <li><a href="http://mustache.github.io/">mustache</a> (MIT License)</li>
+    <li><a href="http://piwik.org/">Piwik</a> (GNU GPL v3)</li>
+    <li><a href="http://phinx.org/">Phinx</a> (MIT License)</li>
+    <li><a href="http://jquery.com/">jQuery</a> (MIT License)</li>
+    <li><a href="https://github.com/alanhogan/Tabby">Tabby</a></li>
+    <li><a href="http://getbootstrap.com/">Bootstrap</a> (MIT License)</li>
+    <li><a href="http://momentjs.com/">Moment.js + Moment Timezone</a> (MIT License)</li>
+    <li><a href="http://highlightjs.org/">highlight.js</a> (BSD License)</li>
+    <li>Font "PoliticsHeadBold" by <a href="http://kaklotter.de/" hreflang="de">Fred Bordfeld</a></li>
+    <li><a href="/uploads/peter-face_wide.jpg">Portrait Image</a> by <a href="http://elena-rachor.at/" hreflang="de">Elena Rachor</a></li>
+    <li><a href="/uploads/peter-coding_wide.jpg">Image</a> by <a href="http://stefangrassberger.at/" hreflang="de">Stefan Grassberger</a></li>
+</ul>
+
+<h2>Privacy</h2>
+<p>
+    This website uses <a href="http://piwik.org/" hreflang="en">Piwik</a> to track user visits. The Piwik installation runs on the same server and tracking data is not given to a third party. As recommended by <a href="http://www.wirspeichernnicht.de/content/view/38/24/" hreflang="de">wirspeichernnicht.de</a> with <code>ip_address_mask_length = 2</code> only two bytes of the IP address are saved and the browser option <a href="https://en.wikipedia.org/wiki/Do_Not_Track">Do Not Track</a> is respected. To keep track of repeated visitors <a href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookies</a> are used. If you don't want to be tracked <a href="https://www.eff.org/deeplinks/2012/06/how-turn-do-not-track-your-browser">activate the Do Not Track option</a> in your Browser, block javascript or the subdomain <code>piwik.petergrassberger.com</code> or opt-out below.
+</p>
+
+<h3>Opt-out</h3>
+<iframe style="border: 1px solid red;" frameborder="no" width="100%" src="http://piwik.petergrassberger.com/index.php?module=CoreAdminHome&action=optOut&language=en"></iframe>
