@@ -1,1 +1,19 @@
-post
+---
+layout: default
+---
+
+<article class="blog">
+    <span class="createdDate"><!-- title="Last modified: {{modifiedDmy}}">-->{{ page.date | date: "%d.%m.%Y" }}</span>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+{{ content }}
+    <footer>
+        <h2>How did you like this post?</h2>
+        <p>
+            Feel free to send your thoughts on
+            <a href="https://twitter.com/PeterTheOne">Twitter</a> or via
+            <a href="mailto:petertheone@gmail.com">E-Mail</a>.
+            <!--Or <a href="https://flattr.com/submit/auto?user_id=PeterTheOne&url=http%3A%2F%2Fpetergrassberger.com%2F/blog/{{#post}}{{title_clean}}{{/post}}/&title={{#post}}{{title}}{{/post}}">Flattr</a> me.-->
+        </p>
+    </footer>
+
+</article>
