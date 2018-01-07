@@ -4,7 +4,10 @@ layout: default
 
 <section class="projects">
     <h1><a href="/projects/">Projects</a></h1>
-    {% for project in site.projects %}
+    {% assign years = site.projects | group_by: "year" | reverse %}
+    {% for year in years %}
+    <span>{{ year.name }}</span>
+    {% for project in year.items %}
     <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
     <!--<ul class="tags">
         {{#tags}}
@@ -12,5 +15,6 @@ layout: default
         {{/tags}}
     </ul>-->
     <p></p>
+    {% endfor %}
     {% endfor %}
 </section>
