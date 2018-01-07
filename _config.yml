@@ -36,6 +36,11 @@ collections:
   output: true
   permalink: /projects/:title/
 
+# todo: maybe move to /feed/ because now it isn't an rss feed
+feed:
+  path: /rss/index.xml
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
