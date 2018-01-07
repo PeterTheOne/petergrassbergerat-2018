@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="projects">
+    <h1><a href="/projects/">Projects</a></h1>
+    {% for project in site.projects %}
+    <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+    <!--<ul class="tags">
+        {{#tags}}
+        <li><a href="/projects/tags/{{name_clean}}" style="background-color: {{color}}">{{name}}</a></li>
+        {{/tags}}
+    </ul>-->
+    <p></p>
+    {% endfor %}
+</section>
