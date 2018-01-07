@@ -321,6 +321,16 @@ html[lang="de"] :link[hreflang]:not([hreflang="de"])::after {
     font-size: xx-small;
 }
 
+a.broken {
+    color: #a55858;
+}
+
+a.broken::after {
+    color: #a55858;
+    content: " broken";
+    font-size: xx-small;
+}
+
 section > h1:first-child {
     font-size: 1.5em;
 }
