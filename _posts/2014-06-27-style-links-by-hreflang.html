@@ -10,7 +10,7 @@ tags:
 <p><b>or how to mark links with a different language.</b></p>
 
 <p>
-    I've been using the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang"><code>hreflang</code></a> tag for some time now to mark links that point to websites with content in different languages. It's nice to have this kind of semantic information, but no browser displays links any different based on it. I like the way <a href="http://www.wikipedia.org/">Wikipedia</a> marks its external links with an icon and I wanted something similar for my <a href="http://petergrassberger.com/">petergrassberger.com</a> and <a href="http://petergrassberger.at/" hreflang="de">petergrassberger.at</a> sites. I found something on <a href="http://lachy.id.au/log/2005/04/handy-css#language">Lachy's Log: Handy CSS</a> that was almost what i wanted, take a look at the final version below or as a <a href="https://gist.github.com/PeterTheOne/22057c1ec51029e2576c">gist</a>.
+    I've been using the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang"><code>hreflang</code></a> tag for some time now to mark links that point to websites with content in different languages. It's nice to have this kind of semantic information, but no browser displays links any different based on it. I like the way <a href="https://www.wikipedia.org/">Wikipedia</a> marks its external links with an icon and I wanted something similar for my <a href="https://petergrassberger.com/">petergrassberger.com</a> and <a href="https://petergrassberger.at/" hreflang="de">petergrassberger.at</a> sites. I found something on <a href="https://lachy.id.au/log/2005/04/handy-css#language">Lachy's Log: Handy CSS</a> that was almost what i wanted, take a look at the final version below or as a <a href="https://gist.github.com/PeterTheOne/22057c1ec51029e2576c">gist</a>.
 </p>
 
 index.html:
@@ -22,9 +22,9 @@ index.html:
     &lt;/head&gt;
     &lt;body&gt;
         &lt;!-- this link will have &quot;de&quot; appended --&gt;
-        &lt;a href=&quot;http://petergrassberger.at/&quot; hreflang=&quot;de&quot;&gt;German Site&lt;/a&gt;
+        &lt;a href=&quot;https://petergrassberger.at/&quot; hreflang=&quot;de&quot;&gt;German Site&lt;/a&gt;
         &lt;!-- this link will stay the same because the site lang is &quot;en&quot; --&gt;
-        &lt;a href=&quot;http://petergrassberger.com/&quot; hreflang=&quot;en&quot;&gt;English Site&lt;/a&gt;
+        &lt;a href=&quot;https://petergrassberger.com/&quot; hreflang=&quot;en&quot;&gt;English Site&lt;/a&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
