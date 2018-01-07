@@ -1,0 +1,55 @@
+---
+layout:  post
+title:   "Style Links By hreflang"
+lang:    en
+date:    2014-06-27 16:11:08 +0100
+updated: 2014-07-07 16:55:07 +0100
+tags:
+---
+
+<p><b>or how to mark links with a different language.</b></p>
+
+<p>
+    I've been using the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-hreflang"><code>hreflang</code></a> tag for some time now to mark links that point to websites with content in different languages. It's nice to have this kind of semantic information, but no browser displays links any different based on it. I like the way <a href="http://www.wikipedia.org/">Wikipedia</a> marks its external links with an icon and I wanted something similar for my <a href="http://petergrassberger.com/">petergrassberger.com</a> and <a href="http://petergrassberger.at/" hreflang="de">petergrassberger.at</a> sites. I found something on <a href="http://lachy.id.au/log/2005/04/handy-css#language">Lachy's Log: Handy CSS</a> that was almost what i wanted, take a look at the final version below or as a <a href="https://gist.github.com/PeterTheOne/22057c1ec51029e2576c">gist</a>.
+</p>
+
+index.html:
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;!-- or &quot;de&quot; --&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Style links by hreflang&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- this link will have &quot;de&quot; appended --&gt;
+        &lt;a href=&quot;http://petergrassberger.at/&quot; hreflang=&quot;de&quot;&gt;German Site&lt;/a&gt;
+        &lt;!-- this link will stay the same because the site lang is &quot;en&quot; --&gt;
+        &lt;a href=&quot;http://petergrassberger.com/&quot; hreflang=&quot;en&quot;&gt;English Site&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+style.css:
+<pre><code class="css">/* shows hreflang that are not "en" after links on a lang="en" site */
+html[lang="en"] :link[hreflang]:not([hreflang="en"])::after {
+    content: " "attr(hreflang);
+    font-size: xx-small;
+}
+/* shows hreflang that are not "de" after links on a lang="de" site */
+html[lang="de"] :link[hreflang]:not([hreflang="de"])::after {
+    content: " "attr(hreflang);
+    font-size: xx-small;
+}
+
+/*
+    add more if you have more languages
+*/
+</code></pre>
+
+<p>
+    The <code>html[lang="en"]</code> part filters all the pages of other languages, then <code>[hreflang]</code> checks if the <code>hreflang</code>-attribute exists and <code>[hreflang="en"]</code> checks if the <code>hreflang</code>-attribute has a different value from <code>en</code>. The <code>::after</code> selector appends content to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:link"><code>:link</code></a>-elements and <code>content:</code> says what to append, in this case one white space character and the value of the <code>hreflang</code>-attribute.
+</p>
+
+<p>
+    It is a shame that there is no way (that I know of) to compare the <code>html</code> <code>lang</code> attribute directly with the <code>a</code> <code>hreflang</code> attribute, because then you could reduce the css to only one selector and you wouldn't have to add each language separately. Alternatively you could also do this with javascript (and jQuery).
+</p>
