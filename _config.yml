@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
 
 permalink: /blog/:title
+
 collections:
  projects:
   output: true
