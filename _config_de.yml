@@ -1,0 +1,3 @@
+lang: de
+destination: ./_site/de
+include: ["*.de.html"]
