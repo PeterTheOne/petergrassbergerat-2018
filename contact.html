@@ -24,16 +24,16 @@ permalink: /contact/
     I prefer E-Mail, call me between 10h-22h <a href="http://www.timeanddate.com/worldclock/austria/graz">UTC+01:00</a><br />
 <span class="status">Status: <i>loading</i></span>
     <script>
-    $(function() {
+    document.addEventListener("DOMContentLoaded", function(event) {
         var updateStatus = function() {
-            var now = moment().tz('Europe/Vienna')
+            var now = moment().tz('Europe/Vienna');
             var hour = now.format('HH');
             if (hour > 10 && hour < 22) {
                 $('.status').html('<i>It\'s ' + now.format('HH:mm')  + ' in Austria, I should be available now.</i>');
             } else {
                 $('.status').html('<i>It\'s ' + now.format('HH:mm') + ' in Austria, I\'m not available now.</i>');
-             };
-        }
+            }
+        };
 
         updateStatus();
         setInterval(updateStatus, 1000 * 60 * 1);
