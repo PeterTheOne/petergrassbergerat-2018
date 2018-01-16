@@ -28,6 +28,7 @@ github_username:  petertheone
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 permalink: /blog/:title/
 
