@@ -1,7 +1,17 @@
-            <!--<nav id="language">
+            <nav id="language">
                 <ul>
-                    {{#translations}}
-                    <li><a href="{{url}}" hreflang="{{languageTag}}"><abbr lang="{{languageTag}}" title="{{languageName}}">{{languageTag}}</abbr></a></li>
-                    {{/translations}}
+                    {% assign lang = page.lang | default: site.lang | default: "en" %}
+                    {% if lang == "en" %}
+                    <li><a href="{{ site.url }}{{ page.permalink }}" hreflang="en"><abbr lang="en" title="English">en</abbr></a></li>
+
+                        {% if page.permalink_other %}
+                    <li><a href="{{ site.url_other }}{{ page.permalink_other }}" hreflang="de"><abbr lang="de" title="Deutsch">de</abbr></a></li>
+                        {% endif %}
+                    {% else %}
+                        {% if page.permalink_other %}
+                    <li><a href="{{ site.url_other }}{{ page.permalink_other }}" hreflang="en"><abbr lang="en" title="English">en</abbr></a></li>
+                        {% endif %}
+                    <li><a href="{{ site.url }}{{ page.permalink }}" hreflang="de"><abbr lang="de" title="Deutsch">de</abbr></a></li>
+                    {% endif %}
                 </ul>
-            </nav>-->
+            </nav>

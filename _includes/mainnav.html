@@ -1,5 +1,6 @@
             <nav id="mainnav">
-                {% if site.lang == "en" %}
+                {% assign lang = page.lang | default: site.lang | default: "en" %}
+                {% if lang == "en" %}
                 <ul>
                     <li><a href="/projects/">Projects</a></li>
                     <li><a href="/blog/">Blog</a></li>

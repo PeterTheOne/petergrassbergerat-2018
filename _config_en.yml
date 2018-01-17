@@ -1,4 +1,5 @@
 lang: en
 url: "https://petergrassberger.com"
+url_other: "https://petergrassberger.at"
 destination: ./_site/en
 include: [".htaccess","*.en.html"]
