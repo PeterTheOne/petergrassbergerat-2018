@@ -8,7 +8,11 @@ layout: default
     <article class="blog">
         <span class="createdDate" title="Last modified: {{ post.last_modified_at | date: "%d.%m.%Y" }}">{{ post.date | date: "%d.%m.%Y" }}</span>
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        {% if post.content contains '<!--break-->' %}
+{{ post.content | split:'<!--break-->' | first }}
+        {% else %}
 {{ post.content | truncatewords: 90 }}
+        {% endif %}
         <p><a href="{{ post.url }}">Read more...</a></p>
     </article>
     {% endfor %}

@@ -1,0 +1,120 @@
+---
+layout: page
+title: Kontakt
+permalink: /contact/
+---
+
+<h3>E-Mail</h3>
+<div>
+    <a href="mailto:petergrassberger@gmail.com">petergrassberger@gmail.com</a><br />
+    <a href="mailto:peter.grassberger@piratenpartei.at">peter.grassberger@piratenpartei.at</a>
+</div>
+
+<h3>PGP - E-Mail Verschlüsselung</h3>
+<div>
+    <a href="http://files.petergrassberger.com/peter-grassberger_2015_B5F4D176.asc">1DCC C325 2E43 8859 5288  63B4 4F6A CE90 B5F4 D176</a><br />
+    Wie man E-Mails mit PGP verschlüsselt erfährst du auf <a href="https://netzpolitik.org/2013/anleitung-so-verschlusselt-ihr-eure-e-mails-mit-pgp/">Netzpoltik.org</a> oder bei einer <a href="https://cryptoparty.at/">CryptoParty in Österreich</a> oder <a href="http://kryptoparty.de/">Deutschland</a>.
+</div>
+
+<h3>Online</h3>
+    Twitter: <a href="https://twitter.com/PeterTheOne">@PeterTheOne</a><br />
+    GitHub: <a href="https://github.com/PeterTheOne">PeterTheOne</a><br />
+    Xing: <a href="https://www.xing.com/profile/Peter_Grassberger2">Peter Grassberger</a><br />
+    Jabber: <a href="xmpp:petertheone@jabber.metalab.at">petertheone@jabber.metalab.at</a>
+
+<h3>Telefon</h3>
+    <a href="tel:+436764284088">+43 676 4284088</a><br />
+    Ich bevorzuge E-Mail, bin zwischen <time>10h-22h <a href="http://www.timeanddate.com/worldclock/austria/graz">UTC+01:00</a></time> erreichbar.<br />
+<span class="status">Status: <i>ladet</i></span>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var updateStatus = function() {
+            var now = moment().tz('Europe/Vienna')
+            var hour = now.format('HH');
+            if (hour > 10 && hour < 22) {
+                $('.status').html('<i>In Östereich ist es gerade ' + now.format('HH:mm')  + ', ich sollte jetzt erreichbar sein.</i>');
+            } else {
+                $('.status').html('<i>In Östereich ist es gerade ' + now.format('HH:mm')  + ', ich bin nicht erreichbar.</i>');
+            }
+        };
+
+        updateStatus();
+        setInterval(updateStatus, 1000 * 60 * 1);
+    });
+</script>
+
+<h3>Adresse</h3>
+<a href="http://firestream.petergrassberger.at/" style="text-decoration: none; color:#000000;">
+    <address>
+        Peter Grassberger, BSc<br />
+        Feuerbachgasse 30A, Top 62<br />
+        8020 Graz, Österreich
+    </address>
+</a>
+
+<h2>RSS Feeds</h2>
+Es gibt nicht nur einen <a href="http://www.was-ist-rss.de/">RSS Feed</a> für den Blog sondern auch für Seiten und Projekte, ihr könnt der Seite entweder in nur einer Sprache oder gleich in allen folgen.
+
+<table>
+    <thead>
+        <tr>
+            <th><h3>Deutsch</h3></th>
+            <th><h3>Englisch</h3></th>
+            <th><h3>BeideS</h3></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="http://petergrassberger.at/rss/">Alles</a></td>
+            <td><a href="http://petergrassberger.com/rss/">Alles</a></td>
+            <td><a href="http://petergrassberger.at/rss/all/">Alles</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.at/rss/blog/">Nur Blog</a></td>
+            <td><a href="http://petergrassberger.com/rss/blog/">Nur Blog</a></td>
+            <td><a href="http://petergrassberger.at/rss/blog/all/">Nur Blog</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.at/rss/projects/">Nur Projekte</a></td>
+            <td><a href="http://petergrassberger.com/rss/projects/">Nur Projekte</a></td>
+            <td><a href="http://petergrassberger.at/rss/projects/all/">Nur Projekte</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://petergrassberger.at/rss/pages/">Nur Seiten</a></td>
+            <td><a href="http://petergrassberger.com/rss/pages/">Nur Seiten</a></td>
+            <td><a href="http://petergrassberger.at/rss/pages/all/">Nur Seiten</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Creative Commons</h2>
+<p>
+    Alle Inhalte dieser Webseite stehen unter einer <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> Lizenz, es sei denn sie sind anders gekennzeichnet. Es ist nicht verpflichtend mich darüber zu informieren wenn auf meinen Inhalten aufgebaut wird, es würde mich jedoch trotzdem freuen wenn ich davon mitbekomme. Der Quellcode dieser Webseite ist auf <a href="https://github.com/PeterTheOne/petergrassbergerat">Github</a> veröffentlicht, ihr könnt gerne Änderungen machen und mir Änderungsvorschläge schicken. Bitte kontaktiert mich wenn ihr meine Inhalte oder Quellcode für kommerzielle Zwecke verwenden wollt.
+</p>
+
+<h3>Namensnennung</h3>
+<p>
+    Die Webseite verwendet Bibliotheken von Drittanbietern und Skripte mit den verschiedensten Lizenzen und künstlerische Werke wie Fotos und Schriftschnitte die nicht von mir erstellt worden sind.
+</p>
+<ul>
+    <li><a href="http://www.slimframework.com/">Slim Framework</a> (MIT License)</li>
+    <li><a href="http://mustache.github.io/">mustache</a> (MIT License)</li>
+    <li><a href="http://piwik.org/">Piwik</a> (GNU GPL v3)</li>
+    <li><a href="http://phinx.org/">Phinx</a> (MIT License)</li>
+    <li><a href="http://jquery.com/">jQuery</a> (MIT License)</li>
+    <li><a href="https://github.com/alanhogan/Tabby">Tabby</a></li>
+    <li><a href="http://getbootstrap.com/">Bootstrap</a> (MIT License)</li>
+    <li><a href="http://momentjs.com/">Moment.js + Moment Timezone</a> (MIT License)</li>
+    <li><a href="http://highlightjs.org/" hreflang="en">highlight.js</a> (BSD License)</li>
+    <li>Font "PoliticsHeadBold" von <a href="http://kaklotter.de/" hreflang="de">Fred Bordfeld</a></li>
+    <li><a href="/uploads/peter-face_wide.jpg">Portrait Foto</a> von <a href="http://elena-rachor.at/" hreflang="de">Elena Rachor</a></li>
+    <li><a href="/uploads/peter-coding_wide.jpg">Foto</a> von <a href="http://stefangrassberger.at/" hreflang="de">Stefan Grassberger</a></li>
+</ul>
+
+<h2>Privatsphäre</h2>
+<p>
+    Diese Webseite verwendet die Software <a href="http://piwik.org/" hreflang="en">Piwik</a> um Statistiken von Seitenzugriffen aufzuzeichnen. Die Piwik Installation wird auf dem gleichen Server betrieben und die Daten werden nicht an Dritte weitergegeben. Nach Empfehlung von <a href="http://www.wirspeichernnicht.de/content/view/38/24/">wirspeichernnicht.de</a> werden mit <code>ip_address_mask_length = 2</code> nur zwei bytes, also ein kleiner Teil der IP-Adresse gespeichert, au\erdem wird die Browser Option <a href="https://de.wikipedia.org/wiki/Do_Not_Track">Do Not Track</a> respektiert. Um nach zu verfolgen welche Nutzer diese Webseite öfter besuchen werden sogenannte <a href="https://de.wikipedia.org/wiki/Cookie">Cookies</a> verwendet. Wenn man nicht möchte, dass über einen Besucherstatistiken aufgezeichnet werden, kann man diese Aufzeichnung übergehen indem man die Do Not Track Option im Browser <a href="https://www.eff.org/deeplinks/2012/06/how-turn-do-not-track-your-browser" hreflang="en">aktiviert</a>, javascript oder die Subdomain <code>piwik.petergrassberger.com</code> blockiert oder sich unter abmeldet.
+</p>
+
+<h3>Opt-out</h3>
+<iframe style="border: 1px solid red;" frameborder="no" width="100%" height="200px" src="http://piwik.petergrassberger.com/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>

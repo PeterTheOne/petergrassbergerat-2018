@@ -1,9 +1,15 @@
             <nav id="mainnav">
+                {% if site.lang == "en" %}
                 <ul>
-                    <!-- todo: replace with menu from database -->
-                    <li><a href="/">Start</a></li>
                     <li><a href="/projects/">Projects</a></li>
                     <li><a href="/blog/">Blog</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
+                {% else %}
+                <ul>
+                    <li><a href="/projects/">Projekte</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Kontakt</a></li>
+                </ul>
+                {% endif %}
             </nav>
