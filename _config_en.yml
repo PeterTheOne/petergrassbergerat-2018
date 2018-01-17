@@ -1,3 +1,4 @@
 lang: en
+url: "https://petergrassberger.com"
 destination: ./_site/en
-include: ["*.en.html"]
+include: [".htaccess","*.en.html"]
