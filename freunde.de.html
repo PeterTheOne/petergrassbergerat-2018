@@ -1,0 +1,47 @@
+---
+layout: page
+title: Freunde
+permalink: /freunde/
+---
+
+Freunde und Umfeld mit eigenen Webseiten, zufällig geordnet und unvollständig.
+
+<ul class="friends-list">
+    <li><a href="https://stefangrassberger.at/">Stefan Grassberger, Digital Artist, Front-end Developer</a></li>
+    <li><a href="https://klavierunterricht-klagenfurt.at/">Gerd Drexler, Klavierlehrer</a></li>
+    <li><a href="https://www.zeichenschatz.net/">Oliver Schöndorfer, Designer, Speaker, Blogger</a></li>
+    <li><a href="http://stefan.2904.cc/">Stefan2904, technology ∩ society</a></li>
+    <li><a href="https://murdeltas.wordpress.com/">murdelta, podcasts, community</a></li>
+    <li><a href="http://lukas-prokop.at/">Lukas Prokop, software dev, linux, digital typesetting</a></li>
+    <li><a href="https://gruss.cc/">Daniel Gruss, cache attacks, infosec</a></li>
+    <li><a href="https://nicolas.braud-santoni.eu/">Nicolas Braud-Santoni, crypto, Tor</a></li>
+    <li><a href="http://www.diktyon.eu/">Lukas Daniel Klausner, mathematician, linguist</a></li>
+    <li><a href="http://wolfgangtschauko.at">Wolfgang Tschauko</a></li>
+    <li><a href="https://noniq.at/">Stefan Daschek</a></li>
+    <li><a href="http://www.florian-rachor.de/">Florian Rachor</a></li>
+    <li><a href="http://www.elena-rachor.at/">Elena Rachor</a></li>
+    <li><a href="http://blog.c3o.org/">Christopher Clay</a></li>
+    <li><a href="https://fuchsy.com/">Elena Rachor</a></li>
+    <li><a href="http://www.elena-rachor.at/">Fuchsy</a></li>
+    <li><a href="https://eest9.eu/">Erwin Ernst Steinhammer</a></li>
+    <li><a href="http://www.stefankasberger.at/">Stefan Kasberger</a></li>
+    <li><a href="https://juliareda.eu">Julia Reda</a></li>
+    <li><a href="https://nini.su/">Bernhard Hayden</a></li>
+    <li><a href="https://lutoma.org/">Lukas Martini</a></li>
+    <li><a href="http://weblog.igler.at/">André Igler</a></li>
+    <li><a href=http://www.juergenbrueder.com/">Jürgen Brüder</a></li>
+    <li><a href="https://annadrusko.com/">Anna-Magdalena Druško</a></li>
+    <li><a href="https://www.danielwaxweiler.net/">Daniel Waxweiler</a></li>
+    <li><a href="http://daniel.lohninger.work/">Daniel Lohninger</a></li>
+    <li><a href="http://socialhack.eu/">Thomas Lohninger</a></li>
+    <li><a href="https://blog.ximex.at/">Thomas Rupprecht</a></li>
+    <li><a href="http://arnopucher.at/">Arno Pucher</a></li>
+    <li><a href="http://www.christophulbrich.at/">Christoph Ulbrich</a></li>
+</ul>
+
+<script>
+    var friendsList = document.getElementsByClassName('friends-list')[0];
+    for (var i = friendsList.children.length; i >= 0; i--) {
+        friendsList.appendChild(friendsList.children[Math.random() * i | 0]);
+    }
+</script>
