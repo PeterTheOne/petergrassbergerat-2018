@@ -44,6 +44,10 @@ nav#mainnav a:hover {
     position: inherit;
 }
 
+body {
+    padding-bottom: 300px;
+}
+
 body,
 input,
 select,
