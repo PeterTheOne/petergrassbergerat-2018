@@ -4,7 +4,7 @@ title: Datenschutzerklärung
 permalink: /datenschutz/
 ---
 
-Der Schutz von persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbeiten deine Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In dieser Datenschutzerklärung informieree ich dich über die wichtigsten Aspekte der Datenverarbeitung im Rahmen meiner Webseite. 
+Der Schutz von persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbeiten deine Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In dieser Datenschutzerklärung informiere ich dich über die wichtigsten Aspekte der Datenverarbeitung im Rahmen meiner Webseite. 
 
 
 Kontakt mit uns
@@ -49,4 +49,4 @@ Deine Rechte
 
 Dir stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn du glaubst, dass die Verarbeitung deiner Daten gegen das Datenschutzrecht verstößt oder deine datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, kannst du dich bei der Aufsichtsbehörde beschweren. In Österreich ist dies die [Datenschutzbehörde](https://www.dsb.gv.at/). 
 
-Du errreichst mich unter [Kontakt](/contact/).
+Du erreichst mich unter [Kontakt](/contact/).
