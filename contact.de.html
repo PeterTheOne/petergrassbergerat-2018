@@ -30,7 +30,7 @@ permalink_other: /contact/
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         var updateStatus = function() {
-            var now = moment().tz('Europe/Vienna')
+            var now = moment().tz('Europe/Vienna');
             var hour = now.format('HH');
             if (hour > 10 && hour < 22) {
                 $('.status').html('<i>In Östereich ist es gerade ' + now.format('HH:mm')  + ', ich sollte jetzt erreichbar sein.</i>');
@@ -98,18 +98,16 @@ Es gibt nicht nur einen <a href="http://www.was-ist-rss.de/">RSS Feed</a> für d
     Die Webseite verwendet Bibliotheken von Drittanbietern und Skripte mit den verschiedensten Lizenzen und künstlerische Werke wie Fotos und Schriftschnitte die nicht von mir erstellt worden sind.
 </p>
 <ul>
-    <li><a href="http://www.slimframework.com/">Slim Framework</a> (MIT License)</li>
-    <li><a href="http://mustache.github.io/">mustache</a> (MIT License)</li>
-    <li><a href="http://piwik.org/">Piwik</a> (GNU GPL v3)</li>
-    <li><a href="http://phinx.org/">Phinx</a> (MIT License)</li>
+    <li><a href="https://jekyllrb.com/">Jekyll</a> (MIT)</li>
+    <li><a href="https://github.com/jekyll/jekyll-feed">jekyll-feed</a> (MIT)</li>
+    <li><a href="https://github.com/jekyll/jekyll-sitemap">jekyll-sitemap</a> (MIT)</li>
+    <li><a href="https://matomo.org/">Matomo</a> (GNU GPL v3)</li>
     <li><a href="http://jquery.com/">jQuery</a> (MIT License)</li>
-    <li><a href="https://github.com/alanhogan/Tabby">Tabby</a></li>
     <li><a href="http://getbootstrap.com/">Bootstrap</a> (MIT License)</li>
     <li><a href="http://momentjs.com/">Moment.js + Moment Timezone</a> (MIT License)</li>
     <li><a href="http://highlightjs.org/" hreflang="en">highlight.js</a> (BSD License)</li>
-    <li>Font "PoliticsHeadBold" von <a href="http://kaklotter.de/" hreflang="de">Fred Bordfeld</a></li>
+    <li>Font "Politics HeadBold" von <a href="http://kaklotter.de/" hreflang="de">Fred Bordfeld</a></li>
     <li><a href="/uploads/peter-face_wide.jpg">Portrait Foto</a> von <a href="http://elena-rachor.at/" hreflang="de">Elena Rachor</a></li>
-    <li><a href="/uploads/peter-coding_wide.jpg">Foto</a> von <a href="http://stefangrassberger.at/" hreflang="de">Stefan Grassberger</a></li>
 </ul>
 
 <h2>Privatsphäre</h2>
