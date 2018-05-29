@@ -10,7 +10,7 @@ Der Schutz von persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbei
 Kontakt mit uns
 ---------------
 
-Wenn du per E-Mail Kontakt mit mir aufnimmst, werden deine angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen maximal **sechs Monate** bei mir gespeichert. Diese Daten gebe ich nicht ohne deine Einwilligung weiter.
+Wenn du per E-Mail Kontakt mit mir aufnimmst, werden deine angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Diese Daten gebe ich nicht ohne deine Einwilligung weiter.
 
 
 Cookies
