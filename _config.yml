@@ -48,4 +48,4 @@ feed:
 
 # Settings overridden by language-specific configs
 destination: "/ See _config.yml on how to build this thing"
-exclude: ["*.??.html","Gemfile","Gemfile.lock"]
+exclude: ["vendor", "*.??.html", "Gemfile", "Gemfile.lock"]
