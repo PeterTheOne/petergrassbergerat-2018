@@ -21,3 +21,26 @@ ErrorDocument 404 /404.html
 	Header set Referrer-Policy same-origin
 	Header set Feature-Policy "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'none'; payment 'none';"
 </IfModule>
+
+ExpiresActive On
+ExpiresDefault A0
+
+# 1 week
+<FilesMatch "\.(jpg|png|gif|ico|svg|eot|otf|ttf|woff)$">
+ExpiresDefault A604800
+Header append Cache-Control "public"
+</FilesMatch>
+
+# 1 hour
+<FilesMatch "\.(js|css)$">
+ExpiresDefault A3600
+Header append Cache-Control "proxy-revalidate"
+</FilesMatch>
+
+# no cache
+<FilesMatch "\.(html|txt|md)$">
+ExpiresActive Off
+Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+Header set Pragma "no-cache"
+</FilesMatch>
+
