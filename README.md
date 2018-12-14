@@ -4,6 +4,8 @@ petergrassbergerat-2018
 a website [petergrassberger.com](https://petergrassberger.com) 
 and [petergrassberger.at](https://petergrassberger.at).
 
+[![Build Status](https://travis-ci.org/PeterTheOne/petergrassbergerat-2018.svg?branch=master)](https://travis-ci.org/PeterTheOne/petergrassbergerat-2018)
+
 
 build
 -----
